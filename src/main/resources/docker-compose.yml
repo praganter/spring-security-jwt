@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  postgre:
+    container_name: postgres
+    image: postgres:15.6
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=1234
+    expose:
+      - 5432
